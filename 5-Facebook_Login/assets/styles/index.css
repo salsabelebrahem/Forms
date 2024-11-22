@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.logo {
+    margin-left: 250px; 
+}
+
+.logo img {
+    width: 50%;
+    height: auto;
+}
+
+.logo h2 {
+    font-size: 25px;
+    color: #333;
+    line-height: 28px;
+    width: auto;
+}
+
+.box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-left: 270px;
+}
+
+.box input[type="text"] {
+    width: calc(100% - 25%);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 45px;
+    text-align: end;
+    font-size: 20px;
+}
+
+.box button[type="submit"] {
+    width: calc(100% - 25%);
+    padding: 10px;
+    background-color: #0084ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 45px;
+    font-size: 20px;
+}
+
+.a2 {
+    margin-top: 10px;
+}
+
+.a2 a {
+    color: #0084ff;
+    text-decoration: none;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px auto;
+    width: 75%;
+} 
+
+.box .forgot-password {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #0084ff;
+    border-bottom: 1px solid transparent;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .box {
+        margin-left: 0;
+    }
+
+    .box input[type="text"],
+    .box button[type="submit"] {
+        width: 100%;
+    }
+
+    .logo img {
+        width: 70%; 
+    }
+
+    .logo h2 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
